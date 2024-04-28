@@ -15,6 +15,10 @@ const db = async () => {
 //Connecting DB
 db();
 
+app.get('/', (req, res) => {
+    res.send('Welcome to train  booking application! 🙋‍♂️, 🌏 🎊✨🤩');
+  });
+
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
